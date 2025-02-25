@@ -1,0 +1,273 @@
+.product-grid-buttons {
+    opacity: 0;
+    transition: all ease .3s;
+    bottom: -150px;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 1rem 0;
+    z-index: 2;
+}
+
+.product-grid-item:hover .product-grid-buttons {
+    opacity: 1;
+    bottom: 0;
+}
+
+.product-grid-item {
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+    height: 100%;
+    width: 100%;
+}
+
+.product-head {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-thumb {
+    aspect-ratio: 1;
+    position: relative;
+    padding: 15px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.product-thumb img {
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.product-grid-item:hover .product-thumb img {
+    transform: scale(1.05);
+}
+
+.product-grid-buttons .d-flex.justify-content-center {
+    margin-top: 0 !important;
+    height: auto !important;
+}
+
+.product-grid-buttons a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin: 0 4px;
+    transition: all 0.3s ease;
+    background: white;
+    border: 1px solid #eee;
+    position: relative;
+}
+
+.product-grid-buttons a:hover,
+.product-grid-buttons a.active {
+    background: #ff6b00;
+    border-color: #ff6b00;
+}
+
+.product-grid-buttons a:hover svg,
+.product-grid-buttons a.active svg {
+    color: white !important;
+}
+
+/* Add animation for the icon change */
+.product-grid-buttons a svg {
+    transition: all 0.3s ease;
+    color: #ff6b00 !important;
+}
+
+/* Add a subtle scale animation on click */
+.product-grid-buttons a:active {
+    transform: scale(0.95);
+}
+
+.product-body {
+    padding: 0 15px 15px;
+}
+
+.heading-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.heading-left {
+    flex: 1;
+}
+
+.heading-left h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.heading-left p {
+    color: #6c757d;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.heading-left a {
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .heading-left h2 {
+        font-size: 2rem;
+    }
+}
+
+.row-cols-xl-5 > * {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+/* Additional styles to match exact dimensions */
+.product-grid-item {
+    min-height: 320px;
+}
+
+.product-thumb {
+    min-height: 200px;
+}
+
+.product-body {
+    min-height: 80px;
+}
+
+.caption-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.discount-price {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 8px;
+}
+
+.bg-secondary {
+    background-color: #ffc107 !important;
+    border-bottom-right-radius: 15px;
+    font-size: 14px;
+    padding: 4px 8px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    font-weight: 500;
+    min-width: 45px;
+    text-align: center;
+}
+
+.text-primary {
+    color: #ff6b00 !important;
+}
+
+.text-dark {
+    color: #333 !important;
+}
+
+.small {
+    font-size: 0.875rem;
+}
+
+/* Add these styles at the end of your existing CSS */
+
+.slick-slider {
+    margin: 0 -12px;
+}
+
+.slick-slide {
+    padding: 0 12px;
+}
+
+.slick-prev, .slick-next {
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+}
+
+.slick-prev {
+    left: -5px;
+}
+
+.slick-next {
+    right: -5px;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 40px;
+    color: #ff6b00;
+}
+
+.slick-dots {
+    bottom: -35px;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #ff6b00;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #ff6b00;
+}
+
+/* Price alignment */
+.text-nowrap {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.fw-bold {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.text-decoration-line-through {
+    font-size: 14px;
+    color: #999;
+}
+
+/* Product name alignment */
+.product-body {
+    padding: 0 15px 15px;
+}
+
+.w-100.mb-2 {
+    margin-bottom: 10px !important;
+}
+
+.lh-sm {
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+} 
